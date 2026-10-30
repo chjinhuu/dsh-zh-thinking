@@ -1,0 +1,48 @@
+{
+  "name": "dsh-zh-thinking",
+  "version": "1.0.0",
+  "description": "让 DeepSeek Harness 的模型用中文思考（reasoning 通道），不只是用中文回答。把语言约束放在系统提示与运行时快照的头尾，让它在每一次请求里都贴着生成点。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "chinese",
+    "reasoning",
+    "thinking",
+    "language"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "slots",
+        "locale",
+        "configForms"
+      ],
+      "platform": "web"
+    },
+    "engines": {
+      "dsh": ">=0.2.0-rc.2"
+    }
+  },
+  "license": "MIT"
+}

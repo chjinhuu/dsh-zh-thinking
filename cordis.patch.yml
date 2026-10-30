@@ -1,0 +1,6 @@
+# dsh-zh-thinking bundle 层：把插件条目插进宿主加载器。
+# 由 `dsh plugin --profile <name> add dsh-zh-thinking` 自动装配（包内声明 dsh.bundle.patch），
+# 手动安装时等价于在 profile 的 cordis.patch.yml 里加同一段。
+- insert:
+    - id: zh-thinking
+      name: 'dsh-zh-thinking'
