@@ -1,6 +1,6 @@
 {
   "name": "dsh-zh-thinking",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "让 DeepSeek Harness 的模型用中文思考（reasoning 通道），不只是用中文回答。把语言约束放在系统提示与运行时快照的头尾，让它在每一次请求里都贴着生成点。",
   "type": "module",
   "main": "lib/index.js",
@@ -25,6 +25,14 @@
     "thinking",
     "language"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chjinhuu/dsh-zh-thinking.git"
+  },
+  "homepage": "https://github.com/chjinhuu/dsh-zh-thinking#readme",
+  "bugs": {
+    "url": "https://github.com/chjinhuu/dsh-zh-thinking/issues"
+  },
   "publishConfig": {
     "access": "public"
   },
